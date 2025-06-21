@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    background: #F7FAFC;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text x="0" y="15" font-size="20" fill="%23e1e7ee">+</text></svg>');
+}
+
+
+/* Header */
+header {
+    background-color: #143b63;
+    color: white;
+    padding: 16px 0;
+    min-height: 72px; 
+}
+
+/* .container {
+    max-width: 1400px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 0 240px;
+    padding: 0 32px;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 1.2rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+} */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.actions {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+}
+
+.actions .btn {
+    /* border: 1px solid yellow; */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn.white {
+    background: #f8fafc;
+    color: #143b63;
+}
+
+.btn.teal {
+    margin-left: 8px;
+    background: #38b2ac;
+    color: #ffffff;
+}
+
+.btn.teal:hover {
+  background: #17a79e;
+}
+
+/* Main */
+.background {
+    /* border: 1px solid red; */
+    min-height: 63vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    /* height: 64vh; */
+}
+
+.login-card {
+    padding: 20px 20px 0 20px;
+}
+
+.card-box-login {
+    border: 1px solid #bdc3c97c;
+    background: white;
+    padding: 0 0 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 1px 20px 10px rgba(0, 0, 0, 0.082);
+    text-align: center;
+    width: 100%;
+    max-width: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-box-registro {
+    max-width: 480px;
+}
+  
+.login-icon {
+    background: #143b63;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.login-card h2 {
+    color: #143b63;
+    margin: 16px 0px 8px;
+}
+
+.login-card p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.login-card form {
+    text-align: left;
+    /* flex-grow: 1; */
+}
+
+form .nome {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .nome input {
+    flex: 1;
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid #ced4da93;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+form .senha p {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+form label .forgot {
+    float: right;
+    font-size: 14px;
+    color: #4ecf9e;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+form input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da93;
+    font-size: 14px;
+}
+
+form .primeiraSenha input {
+    margin-bottom: 8px;
+}
+
+form .confirmarSenha input {
+    margin-bottom: 25px;
+}
+
+.termosServico {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.termosServico input[type="checkbox"]:checked{
+    accent-color: #22c55e;
+    box-shadow: 0px 0px 10px 3px #4cd87fc9;
+    border-radius: 50%;
+}
+
+.labelTermo label{
+    padding-left: 6px;
+    word-spacing: 3px;
+}
+
+.labelTermo span{
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.labelTermo a {
+    color: #4ecf9e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn.navy.full {
+    width: 100%;
+    background: #143b63;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.criar {
+    margin-top: 5px;
+}
+
+p.register , p.entrar {
+    border-top: 1px solid #ced4dac9;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.register a , .entrar a {
+    color: #4ecf9e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* Footer */
+footer {
+    background: #143b63;
+    color: white;
+    padding: 40px 16px 20px;
+    font-size: 15px;
+    /* height: 29.2vh; */
+}
+
+.footer-container {
+    /* border: 1px solid red; */
+    margin: 0 14% 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-column {
+    /* border: 1px solid red; */
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+
+}
+
+.footer-column ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+    /* border: 1px solid white; */
+    margin: 20px 14% 12px;
+    max-width: 1100px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* margin-top: 20px; */
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 32px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        margin: 0 8%;
+    }
+
+    .footer-bottom {
+        margin: 20px 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: auto;
+        text-align: center;
+    }
+
+    nav ul a {
+        padding: 8px 12px;
+        width: auto;
+    }
+
+    .actions {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .actions .btn {
+        flex: none;
+        min-width: 100px;
+        padding: 10px 16px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actions {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .actions .btn {
+        flex: 1 1 0;
+        padding: 10px 0;
+        font-size: 0.85rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .login-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .login-card h2 {
+        font-size: 20px;
+    }
+
+    .login-card p {
+        font-size: 13px;
+    }
+
+    form label {
+        font-size: 13px;
+    }
+
+    form input {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .btn.navy.full {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    p.register {
+        font-size: 12.5px;
+    }
+}

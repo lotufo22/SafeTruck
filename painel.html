@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Safetruck</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="container">
+            
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>SafeTruck</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="painel.html">Painel</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="login.html" class="btn white">Entrar</a>
+                <a href="registro.html" class="btn teal">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    
+    <main>
+        <div class="container-painel">
+            <div class="cabecalho-pagina">
+                <h1>Painel</h1>
+
+                <button onclick="window.open('login_mecanico.html', '_self')">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span>Acesso do Mecânico</sp>
+                </button>
+            </div>
+
+            <section class="informacoes">
+                <div class="card">
+                    <div class="text">
+                        <p>Total de Baias</p>
+                        <h3>6</h3>
+                    </div>
+                    <div class="icon check-total">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <p>Disponíveis</p>
+                        <h3>2</h3>
+                    </div>
+                    <div class="icon check-disponiveis">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <p>Em Uso</p>
+                        <h3>3</h3>
+                    </div>
+                    <div class="icon uso">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <p>Manutenção</p>
+                        <h3>1</h3>
+                    </div>
+                    <div class="icon manutencao">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="baias">
+                <div class="cabecalho-baias">
+                    <h2>Visão Geral das Baias</h2>
+                    <p>Status atual de todas as baias em sua instalação</p>
+                </div>
+
+                <div class="table-baias">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="coluna-baia">Número da Baia</th>
+                                <th class="coluna-status">Status</th>
+                                <th class="coluna-carreta">Número da Carreta</th>
+                                <th class="coluna-tempo">Desde</th>
+                                <th class="coluna-acoes">Açoes</th>
+                            </tr>
+                        </thead>
+                            
+                        <tbody>
+                            <tr>
+                                <td class="coluna-baia">Baia 01</td>
+                                <td class="coluna-status"><span class="disponivel">Disponível</span></td>
+                                <td class="coluna-carreta">-</td>
+                                <td class="coluna-tempo">-</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="coluna-baia">Baia 02</td>
+                                <td class="coluna-status"><span class="carregando">Carregando</span></td>
+                                <td class="coluna-carreta">TR-1234</td>
+                                <td class="coluna-tempo">10:30</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="coluna-baia">Baia 03</td>
+                                <td class="coluna-status"><span class="descarregando">Descarregando</span></td>
+                                <td class="coluna-carreta">TR-5678</td>
+                                <td class="coluna-tempo">09:15</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="coluna-baia">Baia 04</td>
+                                <td class="coluna-status"><span class="disponivel">Disponível</span></td>
+                                <td class="coluna-carreta">-</td>
+                                <td class="coluna-tempo">-</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="coluna-baia">Baia 05</td>
+                                <td class="coluna-status"><span class="manutencao">Manutenção</span></td>
+                                <td class="coluna-carreta">-</td>
+                                <td class="coluna-tempo">08:00</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="coluna-baia">Baia 06</td>
+                                <td class="coluna-status"><span class="reservada">Reservada</span></td>
+                                <td class="coluna-carreta">TR-9012</td>
+                                <td class="coluna-tempo">11:45</td>
+                                <td class="coluna-acoes"><button>Atualizar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer-baias">
+                    <p>Mostrando 6 de 6 baias</p>
+                    <button>Ver Todas</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>SafeTruck</h3>
+                <p>A solução definitiva para rastreamento e gerenciamento de carretas nas baias da sua instalação.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="painel.html">Painel</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="registro.html">Cadastrar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>Entre em contato conosco através de nossos canais oficiais</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 SafeTruck. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeTruck</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login_mecanico.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>SafeTruck</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="painel.html">Painel</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="login.html" class="btn white">Entrar</a>
+                <a href="registro.html" class="btn teal">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <main class="background">
+        <div class="card-box-login">
+            <div class="cabecalho-card">
+                <div class="login-icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h3>Acesso do Mecânico</h3>
+                <p>Faça login para ver detalhes da manutenção</p>
+            </div>
+
+            <div class="formulario">
+                <form>
+                    <div class="card-input">
+                        <label for="email">Email</label>
+                        <div class="input-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" id="email" placeholder="mecanico@safetruck.com" required />
+                        </div>
+                    </div>
+
+                    <div class="card-input">
+                        <label for="senha">Senha</label>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="senha" required />
+                        </div>
+                    </div>
+
+                    <div class="card-input">
+                        <label for="caminhao">Número do Caminhão</label>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-truck"></i>
+                            <input type="text" id="caminhao" placeholder="TR-0000" required />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn navy full">Acessar Manutenção</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>SafeTruck</h3>
+                <p>A solução definitiva para rastreamento e gerenciamento de carretas nas baias da sua instalação.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="painel.html">Painel</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="registro.html">Cadastrar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>Entre em contato conosco através de nossos canais oficiais</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 SafeTruck. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>

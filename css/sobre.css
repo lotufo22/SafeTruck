@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    line-height: 1.3em;
+}
+
+body {
+    background: #F7FAFC;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text x="0" y="15" font-size="20" fill="%23e1e7ee">+</text></svg>');
+    height: 100%;
+}
+
+main {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 0;
+}
+
+.container-main {
+        
+
+    margin: 0 auto;
+    max-width: 1368px;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.container-main > section {
+    margin-bottom: 60px;
+}
+
+.container-main h1 {
+    font-size: 2.3rem;
+    color: #1d3557;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.card-solo {
+    flex: 1 1 300px;
+    background: white;
+    padding: 24px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    text-align: left;
+}
+
+.card-solo h2 {
+    margin-bottom: 40px;
+    color: #1d3557;
+    margin-bottom: 24px;
+}
+
+.card-solo p {
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+
+.card-solo .text {
+    margin-bottom: 16px;
+}
+
+/* Recursos */
+.recursos {
+    /* background: #f7f9fc; */
+    margin-bottom: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+.recursos h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    color: #1d3557;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.card {
+    flex: 1 1 300px;
+    background: white;
+    padding: 24px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    text-align: left;
+}
+
+.card i {
+    /* border: 1px solid black; */
+    background: #E8EBEE;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #13294b;
+}
+
+.card i.fa-clock {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+/* Equipe */
+.equipe {
+    background: #13294b;
+    color: white;
+    padding: 32px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.equipe h2 {
+    margin-bottom: 24px;
+}
+
+.equipe p {
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+/* Chamada final */
+.cta {
+    padding: 64px 0;
+    text-align: center;
+}
+
+.cta .container-cta {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta h2 {
+    margin-bottom: 16px;
+}
+
+.cta p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    max-width: 672px;
+    margin: 0 auto 32px;
+    /* padding: 0 5px; */
+    letter-spacing: 1px;
+}
+
+.cta .botao-chamada {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-azul {
+    background-color: #13294b;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-white {
+    background-color: #F8FAFC;
+    color: #13294b;
+    padding: 12px 22px;
+    border: 1px solid #13294b;
+    border-radius: 6px;
+    font-weight: bold;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 425px) {
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .beneficios-lista {
+        flex-direction: column;
+        gap: 40px; /* aumenta o espaçamento vertical */
+    }
+
+    .beneficios-lista .lista {
+        max-width: 100%;
+    }
+}
